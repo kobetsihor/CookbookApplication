@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ClientApp\src\app\app.component.ts" />
+    <None Remove="ClientApp\src\app\app.module.ts" />
+    <None Remove="ClientApp\src\app\not-found.component.ts" />
+    <None Remove="ClientApp\src\app\recipe-create.component.ts" />
+    <None Remove="ClientApp\src\app\recipe-edit.component.ts" />
+    <None Remove="ClientApp\src\app\recipe-form.component.ts" />
+    <None Remove="ClientApp\src\app\recipe.service.ts" />
+    <None Remove="ClientApp\src\app\recipe.ts" />
+    <None Remove="ClientApp\src\main.ts" />
+    <None Remove="ClientApp\src\polyfills.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CookbookApplication.BL\CookbookApplication.BL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="3.1.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\src\app\app.component.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\app.module.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\not-found.component.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\recipe-create.component.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\recipe-form.component.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\recipe.service.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\recipe.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\recipe-edit.component.ts" />
+    <TypeScriptCompile Include="ClientApp\src\main.ts" />
+    <TypeScriptCompile Include="ClientApp\src\polyfills.ts" />
+  </ItemGroup>
+
+</Project>
